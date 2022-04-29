@@ -1,4 +1,10 @@
 package com.example.theearlybird;
 
-public class OnFetchDataListener {
+import com.example.theearlybird.Models.Article;
+
+import java.util.List;
+
+public interface OnFetchDataListener<NewsApiResponse> {
+    void onFetchData(List<Article> list, String message);
+    void onError(String message);
 }
