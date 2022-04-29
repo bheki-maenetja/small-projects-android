@@ -1,6 +1,8 @@
 package com.example.theearlybird.Models;
 
-public class Article {
+import java.io.Serializable;
+
+public class Article implements Serializable {
     Source source = null;
     String author = "";
     String title = "";
