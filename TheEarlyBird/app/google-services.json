@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "511061290856",
+    "project_id": "theearlybird-c9056",
+    "storage_bucket": "theearlybird-c9056.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511061290856:android:522a0be09e99e5131bf0dd",
+        "android_client_info": {
+          "package_name": "com.example.theearlybird"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511061290856-qvnvnu6c7vnihafnn3vpnlnp5or2tjqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD043HoNhYjTSrz5RMN3M6iySSOQOJoqXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511061290856-qvnvnu6c7vnihafnn3vpnlnp5or2tjqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
