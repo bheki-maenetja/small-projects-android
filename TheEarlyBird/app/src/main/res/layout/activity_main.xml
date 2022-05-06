@@ -6,6 +6,36 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/user_guide_btn"
+            android:text="User Guide"
+            android:textSize="12sp"
+            android:padding="6dp"
+            android:layout_margin="6dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </Button>
+        <Button
+            android:id="@+id/logout_btn"
+            android:text="Log Out"
+            android:textSize="12sp"
+            android:padding="6dp"
+            android:layout_margin="6dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </Button>
+
+    </LinearLayout>
+
+
+
     <HorizontalScrollView
         android:layout_margin="6dp"
         android:layout_width="match_parent"
@@ -13,6 +43,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_3"
+                android:text="general"
+                android:textSize="12sp"
+                android:padding="6dp"
+                android:layout_margin="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Button>
             <Button
                 android:id="@+id/btn_1"
                 android:text="business"
@@ -25,15 +64,6 @@
             <Button
                 android:id="@+id/btn_2"
                 android:text="entertainment"
-                android:textSize="12sp"
-                android:padding="6dp"
-                android:layout_margin="6dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-            </Button>
-            <Button
-                android:id="@+id/btn_3"
-                android:text="general"
                 android:textSize="12sp"
                 android:padding="6dp"
                 android:layout_margin="6dp"

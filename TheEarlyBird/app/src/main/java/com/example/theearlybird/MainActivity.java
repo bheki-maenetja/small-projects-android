@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements SelectListener, V
     RecyclerView recyclerView;
     CustomAdapter adapter;
     ProgressDialog dialog;
-    Button b1, b2,b3,b4,b5,b6,b7;
+    Button b1, b2,b3,b4,b5,b6,b7, userGuideBtn;
     SearchView searchView;
 
     @Override
@@ -64,6 +64,15 @@ public class MainActivity extends AppCompatActivity implements SelectListener, V
         b6.setOnClickListener(this);
         b7 = findViewById(R.id.btn_7);
         b7.setOnClickListener(this);
+
+        userGuideBtn = findViewById(R.id.user_guide_btn);
+        userGuideBtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, UserGuideActivity.class));
+            }
+        });
 
         RequestManager manager = new RequestManager(this);
         manager.getNewsHeadlines(listener, "general", null);
