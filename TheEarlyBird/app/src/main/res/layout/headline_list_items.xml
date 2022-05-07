@@ -9,32 +9,37 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_margin="6dp"
+        android:layout_margin="0dp"
+        android:padding="8dp"
         android:weightSum="3"
         android:layout_width="match_parent"
+        android:backgroundTint="#141F52"
+        android:background="#141F52"
         android:layout_height="wrap_content">
         <LinearLayout
             android:orientation="vertical"
-            android:layout_margin="8dp"
+            android:layout_margin="0dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2">
 
             <TextView
                 android:id="@+id/text_title"
-                android:textSize="22sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
-                android:maxLines="3"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sen_bold"
+                android:maxLines="5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
             </TextView>
             <TextView
                 android:id="@+id/text_source"
-                android:textSize="18sp"
+                android:textSize="12sp"
                 android:textStyle="bold"
-                android:textColor="@color/purple_500"
+                android:textColor="#00FFFF"
+                android:fontFamily="@font/sen_bold"
                 android:maxLines="1"
                 android:layout_marginTop="6dp"
                 android:layout_width="match_parent"
