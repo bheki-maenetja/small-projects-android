@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheEarlyBird">
-        <activity android:name=".UserGuideActivity"></activity>
+        <activity android:name=".ExternalArticleViewActivity"></activity>
+        <activity android:name=".UserGuideActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".DetailsActivity" />
