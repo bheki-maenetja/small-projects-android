@@ -13,9 +13,12 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#141F52"
+            android:padding="15dp">
             <androidx.cardview.widget.CardView
                 app:cardElevation="8dp"
+                android:backgroundTint="#D6DBF5"
                 android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -29,8 +32,9 @@
                     <TextView
                         android:id="@+id/text_detail_title"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:textSize="26sp"
+                        android:textStyle="italic"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/sen_bold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -47,7 +51,7 @@
                     <TextView
                         android:id="@+id/text_detail_author"
                         android:layout_marginTop="6dp"
-                        android:textColor="@color/purple_500"
+                        android:textColor="@color/black"
                         android:textSize="16sp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -66,8 +70,10 @@
             </androidx.cardview.widget.CardView>
             <TextView
                 android:id="@+id/text_detail_detail"
-                android:textSize="22sp"
-                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/bellota_text_bold"
+                android:textStyle="italic"
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -75,26 +81,26 @@
             </TextView>
             <TextView
                 android:id="@+id/text_detail_content"
-                android:textSize="20sp"
-                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/bellota_text_bold"
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
             </TextView>
             <Button
+                android:id="@+id/externalLink"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Read full article"
-                android:background="@color/purple_500"
-                android:backgroundTint="@color/teal_200"
+                android:backgroundTint="#F97A1F"
                 android:textAllCaps="false"
-                android:id="@+id/externalLink"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp">
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:fontFamily="@font/bellota_text_bold"
+                android:layout_marginTop="20dp" />
 
-            </Button>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
