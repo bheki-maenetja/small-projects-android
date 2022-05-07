@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements SelectListener, V
     RecyclerView recyclerView;
     CustomAdapter adapter;
     ProgressDialog dialog;
-    Button b1, b2,b3,b4,b5,b6,b7, userGuideBtn;
+    Button b1, b2,b3,b4,b5,b6,b7, userGuideBtn, logoutBtn;
     SearchView searchView;
 
     @Override
@@ -71,6 +71,15 @@ public class MainActivity extends AppCompatActivity implements SelectListener, V
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, UserGuideActivity.class));
+            }
+        });
+
+        logoutBtn = findViewById(R.id.logout_btn);
+        logoutBtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
             }
         });
 
