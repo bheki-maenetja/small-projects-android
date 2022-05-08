@@ -17,7 +17,7 @@ public class UserGuideActivity extends AppCompatActivity {
 
         webView = (WebView) findViewById(R.id.user_guide);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://bheki-maenetja.github.io");
+        webView.loadUrl("http://cobvm.sci-project.lboro.ac.uk/");
 
         WebSettings webSettings = webView.getSettings();
         webSettings.setLoadWithOverviewMode(true);
