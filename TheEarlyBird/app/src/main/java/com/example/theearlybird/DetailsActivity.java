@@ -45,8 +45,11 @@ public class DetailsActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DetailsActivity.this, ExternalArticleViewActivity.class)
-                        .putExtra("article-url", headlines.getUrl()));
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(headlines.getUrl()));
+                startActivity(i);
+//                startActivity(new Intent(DetailsActivity.this, ExternalArticleViewActivity.class)
+//                        .putExtra("article-url", headlines.getUrl()));
             }
         });
     }
